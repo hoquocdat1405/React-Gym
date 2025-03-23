@@ -1,0 +1,272 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.hero-left {
+  padding: 2rem;
+  padding-top: 1.5rem;
+  flex: 3;
+}
+
+.hero-ad {
+  text-transform: uppercase;
+  margin-top: 4rem;
+  background-color: #363d42;
+  border-radius: 4rem;
+  width: fit-content;
+  padding: 20px 13px;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-ad > span {
+  z-index: 2;
+}
+
+.hero-ad > div {
+  background-color: var(--orange);
+  height: 80%;
+  width: 4.8rem;
+  position: absolute;
+  left: 8px;
+  border-radius: 3rem;
+  z-index: 1;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: white;
+  gap: 1.5rem;
+  font-weight: bold;
+  text-overflow: inherit;
+}
+
+.hero-title .hero-sub-title {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  width: 80%;
+  text-transform: none;
+}
+
+.hero-figure {
+  display: flex;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.hero-figure > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-figure span:first-child {
+  font-size: 2rem;
+  color: white;
+}
+
+.hero-figure span:nth-child(2) {
+  font-size: 1rem;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  display: flex;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.hero-button button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.hero-button button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.hero-button button:nth-child(2) {
+  background-color: transparent;
+  border: solid 1px var(--orange);
+}
+
+.hero-right {
+  flex: 1;
+  background-color: var(--orange);
+  position: relative;
+}
+
+.hero-right > button {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+.hero-hearth-rate > img {
+  width: 2rem;
+}
+
+.hero-hearth-rate > span {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.hero-hearth-rate > span:nth-child(2) {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.hero-img {
+  width: 23rem;
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+  z-index: 2;
+}
+
+.hero-img_back {
+  position: absolute;
+  width: 13rem;
+  top: 5rem;
+  left: -2rem;
+  z-index: 1;
+}
+
+.hero-hearth-rate {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--darkGrey);
+  padding: 14px;
+  width: fit-content;
+  border-radius: 5px;
+  gap: 1rem;
+  font-family: Inter, sans-serif;
+  position: absolute;
+  top: 8rem;
+  right: 3rem;
+}
+
+.calory-box {
+  background-color: var(--caloryCard);
+  border-radius: 4px;
+  gap: 20px;
+  padding: 1rem;
+  position: absolute;
+  right: 30rem;
+  top: 32rem;
+  display: flex;
+  width: fit-content;
+}
+
+.calory-box img {
+  width: 4rem;
+}
+
+.calory-box > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.calory-box > div span:first-child {
+  color: var(--gray);
+}
+
+.calory-box > div span:nth-child(2) {
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-title{
+    text-align: center;
+  }
+
+  .hero-title .hero-sub-title{
+    width:100%;
+  }
+
+  .hero-figure{
+    text-align: center;
+  }
+
+  .program-title{
+    flex-wrap: wrap;
+  }
+
+  .program-list{
+    flex-wrap: wrap;
+  }
+
+  .program-list-box{
+
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-title{
+    text-align: center;
+  }
+
+  .hero-title .hero-sub-title{
+    width:100%;
+  }
+
+  .hero-figure{
+    text-align: center;
+  }
+
+  .program-title{
+    flex-wrap: wrap;
+  }
+
+  .program-list{
+    flex-wrap: wrap;
+  }
+
+  .program-list-box{
+
+    width:100%;
+  }
+}

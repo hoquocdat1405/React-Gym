@@ -1,0 +1,54 @@
+.program{
+    padding: 0 2rem;
+}
+
+.program-title{
+    display: flex;
+    gap:3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    justify-content: center;
+    font-weight: bold;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.program-list{
+    margin-top: 2rem;
+    display: flex;
+    gap:1rem;
+    color:white;
+}
+
+.program-list-box{
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(128, 128, 128);
+    gap: 1rem;
+}
+
+.program-list-box:hover{
+    cursor: pointer;
+    background-color: var(--orange);
+}
+
+.program-list-box>p:nth-child(2){
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.program-list-box>div{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    font-size: 1.2rem;
+    font-style: bold;
+}
+
+svg{
+    fill: white;
+    height: 2rem;
+    width: 2rem;
+}
